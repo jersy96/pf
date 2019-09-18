@@ -5,7 +5,10 @@ const Login = () => {
   return (
     <div>
       <p>Login</p>
-      <Link to={'/'}>Landing Page</Link>
+      <ul>
+        <li><Link to={'/'}>Landing Page</Link></li>
+        <li><Link to={'/sign_up'}>Sign Up</Link></li>
+      </ul>
     </div>
   );
 };
