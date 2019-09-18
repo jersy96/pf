@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+import history from '../history'
 
 import LandingPage from './LandingPage'
 import Login from './Login'
@@ -7,12 +8,12 @@ import Login from './Login'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <Router history={history}>
         <div>
           <Route path='/' exact component={LandingPage} />
           <Route path='/login' exact component={Login} />
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
