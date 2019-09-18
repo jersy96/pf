@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const MyProfile = () => {
   return (
     <div>
-      <p>Dashboard</p>
+      <p>MyProfile</p>
       <ul>
         <li><Link to={'/'}>Landing Page</Link></li>
-        <li><Link to={'/my_profile'}>MyProfile</Link></li>
+        <li><Link to={'/dashboard'}>Dashboard</Link></li>
       </ul>
     </div>
   );
 };
 
-export default Dashboard;
+export default MyProfile;

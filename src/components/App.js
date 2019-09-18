@@ -6,6 +6,7 @@ import LandingPage from './LandingPage'
 import Login from './Login'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
+import MyProfile from './MyProfile'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/login' exact component={Login} />
           <Route path='/sign_up' exact component={SignUp} />
           <Route path='/dashboard' exact component={Dashboard} />
+          <Route path='/my_profile' exact component={MyProfile} />
         </div>
       </Router>
     </div>
