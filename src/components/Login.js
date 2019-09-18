@@ -8,6 +8,7 @@ const Login = () => {
       <ul>
         <li><Link to={'/'}>Landing Page</Link></li>
         <li><Link to={'/sign_up'}>Sign Up</Link></li>
+        <li><Link to={'/dashboard'}>Dashboard</Link></li>
       </ul>
     </div>
   );
