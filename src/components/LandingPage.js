@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <div>Landing Page</div>
+    <div>
+      <p>Landing Page</p>
+      <Link to={'/login'}>Login</Link>
+    </div>
   );
 };
 
