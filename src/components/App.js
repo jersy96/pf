@@ -3,7 +3,7 @@ import { Router, Route } from 'react-router-dom';
 import history from '../history'
 
 import LandingPage from './LandingPage'
-import Login from './Login'
+import Login from './Login/Login.js'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
 import MyProfile from './MyProfile'
