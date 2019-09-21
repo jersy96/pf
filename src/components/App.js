@@ -7,6 +7,7 @@ import Login from './Login'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
 import MyProfile from './MyProfile'
+import LocationsIndex from './LocationsIndex'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/sign_up' exact component={SignUp} />
           <Route path='/dashboard' exact component={Dashboard} />
           <Route path='/my_profile' exact component={MyProfile} />
+          <Route path='/locations' exact component={LocationsIndex} />
         </div>
       </Router>
     </div>
