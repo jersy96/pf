@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Button from '@material-ui/core/Button';
 import './styles.css'
-import Img from './signUpImg.png';
+import Img from '../../shared/images/signUpImg1.png';
 
 const GreenCheckbox = withStyles({
   root: {
