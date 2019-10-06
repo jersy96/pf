@@ -1,6 +1,7 @@
 import React from 'react';
 import { Router, Route } from 'react-router-dom';
 import history from '../history'
+import 'typeface-roboto';
 
 import LandingPage from './LandingPage'
 import Login from './Login/Login.js'
