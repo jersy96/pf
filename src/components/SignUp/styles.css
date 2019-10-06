@@ -1,0 +1,69 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 640px;
+  width: 960px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.formContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-link-item, .login-link-item a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: none;
+  letter-spacing: -0.05px;
+  color: #9EA0A5;
+  margin-top: 55px;
+}
+
+.login-link-item a:hover {
+  text-decoration-line: underline;
+}
+
+.form-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.06px;
+  color: #212529;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}

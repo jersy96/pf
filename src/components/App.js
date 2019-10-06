@@ -5,7 +5,7 @@ import 'typeface-roboto';
 
 import LandingPage from './LandingPage'
 import Login from './Login/Login.js'
-import SignUp from './SignUp'
+import SignUp from './SignUp/SignUp.js'
 import Dashboard from './Dashboard'
 import MyProfile from './MyProfile'
 import LocationsIndex from './LocationsIndex'
