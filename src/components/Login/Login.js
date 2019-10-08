@@ -4,7 +4,7 @@ import BaseButton from '../shared/BaseButton/BaseButton';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 import './styles.css'
-import Logo from './logo.png';
+import Logo from '../../shared/images/logo.png';
 
 const buttonStyles = {
   color: '#FFFFFF',

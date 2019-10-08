@@ -1,0 +1,48 @@
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#app-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#app-bar-icon {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+#fieldFilterContainer {
+  position: relative;
+  margin-top: 49px;
+}
+
+#fieldFilterImg {
+  width: 100%;
+}
+
+#fieldFilterTitle {
+  position: absolute;
+  top: 80px;
+  left: 155px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -1.875px;
+  color: #FFFFFF;
+  width: 500px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.field-filter {
+  position: absolute;
+  top: 250px;
+  left: 155px;
+}

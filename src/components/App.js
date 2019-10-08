@@ -3,9 +3,9 @@ import { Router, Route } from 'react-router-dom';
 import history from '../history'
 import 'typeface-roboto';
 
-import LandingPage from './LandingPage'
-import Login from './Login/Login.js'
-import SignUp from './SignUp/SignUp.js'
+import LandingPage from './LandingPage/LandingPage'
+import Login from './Login/Login'
+import SignUp from './SignUp/SignUp'
 import Dashboard from './Dashboard'
 import MyProfile from './MyProfile'
 import LocationsIndex from './LocationsIndex'
