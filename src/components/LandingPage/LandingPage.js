@@ -20,6 +20,11 @@ class LandingPage extends React.Component {
           <div id='fieldFilterTitle'>Encuentra canchas en tu ciudad</div>
           <FieldFilter classNames='field-filter'/>
         </div>
+        <div id='new-fields-container'>
+          <div id='new-fields-title'>
+            Nuevas canchas
+          </div>
+        </div>
       </div>  
     );
   }
