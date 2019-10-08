@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Checkbox from '@material-ui/core/Checkbox';
 import { withStyles } from '@material-ui/core/styles';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Button from '@material-ui/core/Button';
+import BaseButton from '../shared/BaseButton/BaseButton';
 import './styles.css'
 import Img from '../../shared/images/signUpImg1.png';
 
@@ -18,18 +18,16 @@ const GreenCheckbox = withStyles({
   checked: {},
 })(props => <Checkbox color="default" {...props} />);
 
-const ColoredButton = withStyles(theme => ({
-  root: {
-    color: '#FFFFFF',
-    backgroundColor: '#2DAB5F',
-    '&:hover': {
-      backgroundColor: 'rgba(45, 171, 95, 0.85)',
-    },
-    width: '330px',
-    height: '56px',
-    marginTop: '24px'
-  }
-}))(Button);
+const buttonStyles = {
+  color: '#FFFFFF',
+  backgroundColor: '#2DAB5F',
+  '&:hover': {
+    backgroundColor: 'rgba(45, 171, 95, 0.85)',
+  },
+  width: '330px',
+  height: '56px',
+  marginTop: '24px'
+}
 
 const ColoredTextField = withStyles({
   root: {
@@ -81,7 +79,7 @@ const SignUp = () => {
             }
             label="He leído los Terminos y Condiciones"
           />
-          <ColoredButton>Ingresar</ColoredButton>        
+          <BaseButton styles={buttonStyles}>Ingresar</BaseButton>
         </div>
         <div className='imageContainer'>
           <img src={Img} alt="Imagen de registro"/>

@@ -1,24 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BaseButton from '../shared/BaseButton/BaseButton';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import './styles.css'
 import Logo from './logo.png';
 
-const ColoredButton = withStyles(theme => ({
-  root: {
-    color: '#FFFFFF',
-    backgroundColor: '#2DAB5F',
-    '&:hover': {
-      backgroundColor: 'rgba(45, 171, 95, 0.85)',
-    },
-    width: '330px',
-    height: '56px',
-    marginTop: '50px',
-    marginBottom: '24px'
+const buttonStyles = {
+  color: '#FFFFFF',
+  backgroundColor: '#2DAB5F',
+  '&:hover': {
+    backgroundColor: 'rgba(45, 171, 95, 0.85)',
   },
-}))(Button);
+  width: '330px',
+  height: '56px',
+  marginTop: '50px',
+  marginBottom: '24px'
+}
 
 const ColoredTextField = withStyles({
   root: {
@@ -49,7 +47,7 @@ const Login = () => {
           type="password"
           margin="normal"
         />
-        <ColoredButton>Ingresar</ColoredButton>
+        <BaseButton styles={buttonStyles}>Ingresar</BaseButton>
         <Link className="register-link-item" to={'/sign_up'}>Registrarme</Link>
       </div>
       <Link className="forgot-password-item" to={'/'}>¿Olvidaste tu contraseña?</Link>
