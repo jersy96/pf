@@ -1,0 +1,5 @@
+#field-filter-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
