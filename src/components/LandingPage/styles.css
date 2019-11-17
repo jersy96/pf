@@ -1,8 +1,10 @@
 #main-container {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
 }
 
+/* Nav Bar */
 #app-bar {
   display: flex;
   flex-direction: row;
@@ -15,6 +17,14 @@
   margin-left: 10px;
 }
 
+#app-bar-text {
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #353536;
+}
+
+/* HEADER */
 #fieldFilterContainer {
   position: relative;
   margin-top: 49px;
@@ -26,16 +36,16 @@
 
 #fieldFilterTitle {
   position: absolute;
-  top: 80px;
-  left: 155px;
-  font-family: Roboto;
+  top: 10%;
+  left: 10%;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 4vw;
   line-height: 60px;
   letter-spacing: -1.875px;
   color: #FFFFFF;
-  width: 500px;
+  max-width: 500px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
@@ -43,15 +53,216 @@
 
 .field-filter {
   position: absolute;
-  top: 250px;
-  left: 155px;
+  top: 50%;
+  left: 10%;
+}
+
+/* CONSEJOS */
+#new-fields-container {
+  margin-top: 25px;
+  margin-bottom: 75px;
 }
 
 #new-fields-title {
-  font-family: Roboto;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 46px;
   line-height: 56px;
+  padding-left: 50px;
+  padding-bottom: 25px;
   color: #404040;
+}
+
+.slider{
+  width: 100%;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slide{
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+#slide > div{
+  display: flex;
+}
+
+#slide-row{
+  flex-direction: column;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 95px;
+  margin-right: 20px;
+}
+
+#slide-row2{
+  flex-direction: column;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  margin-right: 95px;
+}
+
+#slide-text{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* RESERVAS */
+#reservation-container {
+  margin-top: 25px;
+  /* margin-bottom: 45px; */
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background: url('../../shared/images/canchaBack.png');
+  background-size: cover;
+}
+
+#reservation-row{
+  flex-direction: column;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 25px;
+  padding:10px;
+  height: 160px;
+  background-color:  RGBA(255,255,255,0.8);
+  border-radius: 15px;
+}
+
+#reservation-text{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* TORNEOS */
+#tournament-container{
+  padding-top: 25px;
+  padding-bottom: 45px;
+  display: flex;
+  width: 100%;
+  background-color: rgba(46, 202, 115, 0.1);
+}
+
+#tournament-row{
+  flex-direction: column;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+#tournament-text{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* COMUNIDAD */
+#community-container{
+  background-color: #000000;
+  display: flex;
+  width: 100%;
+}
+
+#community-text{
+  flex-direction: column;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+#community-power{
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 50px;
+}
+
+.community-p{
+  text-align: justify;
+  margin-right: 110px;
+}
+
+.community-h1{
+  font-size: 3em;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#community-blocks{
+  flex-direction: row;
+  display:flex;
+  flex: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+#community-row{
+  flex: 50%;
+  flex-direction: column;
+}
+
+#block{
+  border-radius: 10px;
+  background-color: RGBA(255,255,255,0.07);
+  width:220px;
+  padding:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#block-text{
+  color:RGBA(200,200,200,1);
+  font-family: sans-serif;
+}
+
+.block-title{
+  margin:0;
+  padding-left:10px;
+  align-self:center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+  #community-container{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #slider{
+    min-height: 500px;
+  }
+
+  #slide > div{
+    flex-wrap: wrap;
+  }
+
+  #slide-row{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #slide-row2{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #community-blocks{
+    flex-wrap: wrap;
+  }
+
+  #reservation-container{
+    flex-wrap: wrap;
+  }
 }

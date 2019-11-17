@@ -15,17 +15,17 @@ const IconTextLink = (props) => {
       display: 'flex',
       flexDirection: 'row',
       background: props.color || 'black',
-      borderRadius: '100px',
+      borderRadius: props.borderRadius || '100px',
       justifyContent: 'center',
       alignItems: 'center',
-      width: '157px',
+      width: !props.NoIcon ? '157px' : '135px',
       height: '35px',
       fontFamily: 'Roboto',
       fontStyle: 'normal',
       fontWeight: 'bold',
       fontSize: '16px',
       lineHeight: '13px',
-      color: '#FFFFFF',
+      color: props.textColor || '#FFFFFF',
       textTransform: 'uppercase',
       marginRight: props.marginRight || '0px',
       marginLeft: props.marginLeft || '0px',
@@ -39,8 +39,8 @@ const IconTextLink = (props) => {
 
   return (
     <LinkBox onClick={() => navigate(props.url)}>
-      <PersonOutlineIcon/>
-      <div id='text'>{props.children}</div>
+      {!props.NoIcon && <PersonOutlineIcon/>}
+      <div id={!props.NoIcon ? 'text' : ''}>{props.children}</div>
     </LinkBox>
   );
 }

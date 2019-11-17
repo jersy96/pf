@@ -5,7 +5,9 @@
   "dependencies": {
     "@material-ui/core": "^4.4.2",
     "@material-ui/icons": "^4.4.3",
+    "node-sass": "^4.13.0",
     "react": "^16.9.0",
+    "react-awesome-slider": "^2.1.1",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
