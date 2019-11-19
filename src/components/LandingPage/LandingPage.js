@@ -38,7 +38,7 @@ class LandingPage extends React.Component {
 
         {/* NAVBAR */}
         <div id="app-bar">
-          <img id='app-bar-icon' src={Logo} alt="Logo"/>
+          <img id='app-bar-icon' style={{paddingTop:5}} src={Logo} alt="Logo"/>
           <Link id='app-bar-text'>Inicio</Link>
           <Link id='app-bar-text'>Nosotros</Link>
           <IconTextLink url='login' color='#1C1C1C' marginRight='19px'>Ingresar</IconTextLink>
@@ -64,21 +64,21 @@ class LandingPage extends React.Component {
             interval={6000}
           >
             <div id='slide'>
-              <img id='slide-row' src="assets/lorempixel1.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
+              <img id='slide-row' src="assets/calentamiento.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
               <div id='slide-row2'>
                 <h3 id='slide-text'>Duración de un buen calentamiento</h3>
                 <p id='slide-text'>Antes de realizar cualquier ejercicio, el precalentamiento debe durar entre 15 y 20 minutos, dependiendo de la actividad y del estado físico de cada persona.</p>
               </div>
             </div>
             <div id='slide'>
-              <img id='slide-row' src="assets/lorempixel6.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
+              <img id='slide-row' src="assets/calentamiento2.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
               <div id='slide-row2'>
                 <h3 id='slide-text'>Iniciar calentamiento</h3>
                 <p id='slide-text'>Los especialistas recomiendan empezar la preparación con una actividad aeróbica rítmica y suave, como la rotación de las extremidades, para luego pasar, por ejemplo, a una breve carrera sin moverse del sitio para activar las piernas.</p>
               </div>
             </div>
             <div id='slide'>
-              <img id='slide-row' src="assets/lorempixel5.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
+              <img id='slide-row' src="assets/calentamiento3.jpg" alt='consejos' style={{width:"50%", borderRadius:50}}></img>
               <div id='slide-row2'>
                 <h3 id='slide-text'>Duracion de estiramiento de un musculo</h3>
                 <p id='slide-text'>Lo aconsejable es entre 10 y 30 segundos. Más de 30 segundos ya no genera beneficios, pero entre 10 y 30 segundos está bien.</p>
@@ -107,7 +107,6 @@ class LandingPage extends React.Component {
         <div id='tournament-container'>
           <div id='tournament-row'>
             <img src="assets/tournament.jpg" alt='torneos' style={{width:"100%",borderRadius:50}}></img>
-            <a href="https://www.freepik.es/fotos-vectores-gratis/logo">Foto de Logo creado por freepik - www.freepik.es</a>
           </div>
           <div id='tournament-row'>
             <h3 id='tournament-text'>Participa en torneos</h3>
@@ -210,6 +209,39 @@ class LandingPage extends React.Component {
         </div>
 
         {/* FOOTER */}
+        <div id='footer-container'>
+          <div id='footer-row'>
+            <img src="assets/logo.png" alt='logo' style={{width:259}}></img>
+            <p id='footer-text'>Reserva canchas con facilidad gracias a Sportify!</p>
+            <div style={{display:'flex',flexDirection:'row'}}>
+              <img src="assets/AppStore.png" alt='logo' style={{width:135}}></img>
+              <img src="assets/Google Play.png" alt='logo' style={{width:116,marginLeft:10}}></img>
+            </div>
+          </div>
+          <div id='footer-row' style={{display:'flex',flexDirection:'row'}}>
+            <div id='footer-row2'>
+              <h3 id='footer-text'>Producto</h3>
+              <p id='footer-text'>Registro</p>
+              <p id='footer-text'>Ingresar</p>
+              <p id='footer-text'>Explorar</p>
+              <p id='footer-text'>Información</p>
+              <p id='footer-text'>Preguntas Frecuentes</p>
+            </div>
+            <div id='footer-row2'>
+              <h3 id='footer-text'>Nosotros</h3>
+              <p id='footer-text'>Contacto</p>
+              <p id='footer-text'>Métodos de pago</p>
+              <p id='footer-text'>Marca</p>
+              <p id='footer-text'>Soporte</p>
+            </div>
+          </div>
+        </div>
+        <div id='footer-bar'>
+          <p id='footer-text' style={{paddingRight:10}}>Terminos</p>
+          <p id='footer-text' style={{paddingRight:10}}>Privacidad</p>
+          <p id='footer-text' style={{paddingRight:20}}>Licencia</p>
+          <a id='footer-text' href="https://www.freepik.es/fotos-vectores-gratis/logo">Foto de Logo creado por freepik - www.freepik.es</a>
+        </div>
       </div>  
     );
   }
